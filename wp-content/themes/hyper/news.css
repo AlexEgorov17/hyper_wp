@@ -1,0 +1,135 @@
+.more-news {
+  grid-gap: 60px;
+}
+
+.news-full-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news-full-main {
+  width: 80%;
+  position: relative;
+}
+
+.news-full-main img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 25px 85px rgba(0, 0, 0, 0.25);
+}
+
+.news-full-main-content {
+  padding: 35px 50px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.news-full-main-hot {
+  width: 60px;
+  height: 60px;
+  background: #FFA70D;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-full-main-hot img {
+  width: 18px;
+}
+
+.news-full-main-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-full-main-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.news-full-main-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+  max-width: 290px;
+}
+
+.news-full-main-date {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.news-full-main-date img {
+  width: 20px;
+  border-radius: unset;
+  margin-right: 13px;
+}
+
+.news-full-text-wrapper {
+  margin-top: 66px;
+  background: #FFFFFF;
+  box-shadow: 0px 45px 85px rgba(215, 220, 230, 0.35);
+  border-radius: 12px;
+  width: 80%;
+}
+
+.news-full-text-content {
+  padding: 70px 50px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #61697C;
+}
+
+@media screen and (max-width: 700px) {
+  .news-full-main-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-full-main-title {
+    text-align: center;
+  }
+  .news-full-main-header {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .news-full-main-title {
+    font-size: 24px;
+  }
+  .news-full-main-date {
+    font-size: 11px;
+  }
+  .news-full-main-date img {
+    width: 11px;
+  }
+  .news-full-main-content {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .news-full-main-title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .news-full-main-hot {
+    width: 40px;
+    height: 40px;
+  }
+  .news-full-main-content {
+    padding: 5px 20px;
+  }
+}
